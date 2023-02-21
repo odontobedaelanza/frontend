@@ -73,7 +73,7 @@ export default function Options(props) {
         setScheduleType(scheduleType.value);
       }
     }
-    eslint-disable-next-line react-hooks/exhaustive-deps;
+    // eslint-disable-next-line react-hooks/exhaustive-deps;
   }, [settings]);
 
   async function handleChangeUserRating(value) {
