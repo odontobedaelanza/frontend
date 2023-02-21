@@ -102,9 +102,9 @@ export default function Options(props) {
   return (
     <>
       <Grid spacing={3} container>
-        { <Grid xs={12} item>
+        {/* <Grid xs={12} item>
                     <Title>Configurações Gerais</Title>
-                </Grid> }
+                </Grid> */}
         <Grid xs={12} sm={6} md={4} item>
           <FormControl className={classes.selectContainer}>
             <InputLabel id="ratings-label">Avaliações</InputLabel>
