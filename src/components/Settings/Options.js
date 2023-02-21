@@ -6,7 +6,7 @@ import FormControl from "@material-ui/core/FormControl";
 import InputLabel from "@material-ui/core/InputLabel";
 import Select from "@material-ui/core/Select";
 import FormHelperText from "@material-ui/core/FormHelperText";
-// import Title from "../Title";
+import Title from "../Title";
 
 import useSettings from "../../hooks/useSettings";
 
@@ -73,7 +73,7 @@ export default function Options(props) {
         setScheduleType(scheduleType.value);
       }
     }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
+    eslint-disable-next-line react-hooks/exhaustive-deps;
   }, [settings]);
 
   async function handleChangeUserRating(value) {
@@ -102,9 +102,9 @@ export default function Options(props) {
   return (
     <>
       <Grid spacing={3} container>
-        {/* <Grid xs={12} item>
+        { <Grid xs={12} item>
                     <Title>Configurações Gerais</Title>
-                </Grid> */}
+                </Grid> }
         <Grid xs={12} sm={6} md={4} item>
           <FormControl className={classes.selectContainer}>
             <InputLabel id="ratings-label">Avaliações</InputLabel>
