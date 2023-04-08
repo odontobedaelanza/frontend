@@ -215,6 +215,11 @@ export function QueueOptionStepper({ queueId, options, updateOptions }) {
     updateOptions();
   };
 
+  const handleWaitTreatmentChanged = (event, index) => {
+    options[index].waitTreatment = event.target.checked;
+    updateOptions();
+  };
+
   const handleToggleAttach = () => {
     setEnableAttach(!enableAttach);
   };
@@ -533,7 +538,7 @@ export function QueueOptionStepper({ queueId, options, updateOptions }) {
     return (
       <Grid xs={6} item>
         <Grid spacing={2} container>
-          <Grid xs={12} item>
+          <Grid xs={6} item>
             <FormControlLabel
               style={{ paddingTop: 15 }}
               control={
@@ -544,6 +549,19 @@ export function QueueOptionStepper({ queueId, options, updateOptions }) {
                 />
               }
               label="Finalizar Atendimento"
+            />
+          </Grid>
+          <Grid xs={6} item>
+            <FormControlLabel
+              style={{ paddingTop: 15 }}
+              control={
+                <Checkbox
+                  checked={option.waitTreatment}
+                  onChange={(event) => handleWaitTreatmentChanged(event, index)}
+                  color="primary"
+                />
+              }
+              label="Falar com Atendente"
             />
           </Grid>
         </Grid>
