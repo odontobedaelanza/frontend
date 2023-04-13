@@ -75,7 +75,7 @@ const Routes = () => {
                   isPrivate
                 />
                 <Route exact path="/queues" component={Queues} isPrivate />
-                <Route exact path="/chats/:id?" component={Chat} isPrivate />
+                {/*<Route exact path="/chats/:id?" component={Chat} isPrivate /> */}
               </LoggedInLayout>
             </WhatsAppsProvider>
           </Switch>
