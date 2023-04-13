@@ -21,7 +21,7 @@ import { TicketsContextProvider } from "../context/Tickets/TicketsContext";
 import { WhatsAppsProvider } from "../context/WhatsApp/WhatsAppsContext";
 import Route from "./Route";
 import Schedules from "../pages/Schedules";
-import Chat from "../pages/Chat";
+//import Chat from "../pages/Chat";
 
 const Routes = () => {
   return (
