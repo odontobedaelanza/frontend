@@ -250,7 +250,7 @@ const MainListItems = (props) => {
         icon={<LocalOfferIcon />}
       />
 
-      <ListItemLink
+      {/* <ListItemLink
         to="/chats"
         primary={i18n.t("mainDrawer.listItems.chats")}
         icon={
@@ -258,7 +258,7 @@ const MainListItems = (props) => {
             <ForumIcon />
           </Badge>
         }
-      />
+      /> */}
 
       <Can
         role={user.profile}
