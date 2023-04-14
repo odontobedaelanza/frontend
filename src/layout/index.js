@@ -273,7 +273,7 @@ const LoggedInLayout = ({ children }) => {
           </Typography>
           {user.id && <NotificationsPopOver />}
 
-          <ChatPopover />
+          {/* <ChatPopover /> */}
 
           <div>
             <IconButton
