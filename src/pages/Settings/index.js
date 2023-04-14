@@ -39,17 +39,17 @@ const Settings = () => {
 
   const [settings, setSettings] = useState([]);
 
-  // useEffect(() => {
-  //   const fetchSession = async () => {
-  //     try {
-  //       const { data } = await api.get("/settings");
-  //       setSettings(data);
-  //     } catch (err) {
-  //       toastError(err);
-  //     }
-  //   };
-  //   fetchSession();
-  // }, []);
+  useEffect(() => {
+    const fetchSession = async () => {
+      try {
+        const { data } = await api.get("/settings");
+        setSettings(data);
+      } catch (err) {
+        toastError(err);
+      }
+    };
+    fetchSession();
+  }, []);
 
   useEffect(() => {
     const companyId = localStorage.getItem("companyId");
